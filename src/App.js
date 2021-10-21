@@ -1,4 +1,5 @@
 import Carousel from './components/Carousel'
+import Floor from './components/Floor'
 import MenuItem from './components/MenuItem'
 import MenuList from './components/MenuList'
 import Nav from './components/Nav'
@@ -30,13 +31,13 @@ function App() {
         send: false,
       },
       {
-        image: 'https://i.imgur.com/mOU3yi0.jpg',
+        image: 'https://i.imgur.com/oMecN1m.jpg',
         name: '手工泡菜',
         price: 150,
         send: true,
       },
       {
-        image: 'https://i.imgur.com/mOU3yi0.jpg',
+        image: 'https://i.imgur.com/oMecN1m.jpg',
         name: '手工泡菜',
         price: 150,
         send: true,
@@ -48,7 +49,7 @@ function App() {
       <Navbar />
       <div className="container">
         <Carousel />
-        <div className="menu-list space-y-3 px-3">
+        <div id="menu-list" className="space-y-3 px-3">
           <Nav>
             <NavItem>所有菜單</NavItem>
             <NavItem>特色</NavItem>
@@ -62,7 +63,12 @@ function App() {
             }
           </MenuList>
         </div>
+        {/* <div id="intro">
+          <p className="text-lg text-center font-bold">介紹／主廚</p>
+          <img></img>
+        </div> */}
       </div>
+      <Floor />
     </div>
   );
 }
