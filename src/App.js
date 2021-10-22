@@ -47,8 +47,15 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="container">
+      <div className="container pb-5">
         <Carousel />
+        <div id="intro">
+          <p className="text-2xl text-center text-shadow font-bold my-5">關於二姐香味麵館</p>
+          <div className="flex">
+            <p className="text-center my-auto">始於 XXXX 年，位於澎湖吉貝島開創「老街香味麵館」，至 XXXX 年遷移至高雄並改名「二姐香味麵館」<br></br>看還有什麼介紹可以打上來。看還有什麼介紹可以打上來。看還有什麼介紹可以打上來。看還有什麼介紹可以打上來。看還有什麼介紹可以打上來。看還有什麼介紹可以打上來。</p>
+            <img className="w-1/3 ml-5" src="https://i.imgur.com/FqtSHU4.jpg" alt="intro"></img>
+          </div>
+        </div>
         <div id="menu-list" className="space-y-3 px-3">
           <Nav>
             <NavItem>所有菜單</NavItem>
@@ -63,10 +70,6 @@ function App() {
             }
           </MenuList>
         </div>
-        {/* <div id="intro">
-          <p className="text-lg text-center font-bold">介紹／主廚</p>
-          <img></img>
-        </div> */}
       </div>
       <Floor />
     </div>
